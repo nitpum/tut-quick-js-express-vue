@@ -1,3 +1,8 @@
+/**
+ *
+ * Variable
+ *
+ */
 var my_var = 12
 my_var = 'hello'
 
@@ -7,14 +12,27 @@ my_con = 'hello'
 let my_let = 12
 my_let = 'hello'
 
-// Case
+/**
+ *
+ *
+ * Casing
+ *
+ */
+// Case name
 PascalCase
 camelCase
 snake_case
 UPPERCASE
 lowwercase
 
-// Scope
+// In js everything use camelCase
+
+/**
+ *
+ *
+ * GLobal
+ *
+ */
 // Global scope
 var location = 'home'
 
@@ -47,7 +65,12 @@ function getFirstname(user) {
 
 const getFirstNameArrow = (user) => user.fisrtname
 
-// Array vs Object
+/**
+ *
+ *
+ * Array & Object
+ *
+ */
 const myArray = [1, 2, 3]
 const myObject = { id: 0, firstName: 'nitpum' }
 const myObjectSpecial = { 'first-name': 'nitpum' }
@@ -77,8 +100,12 @@ const myObject = { firstName } // magic
 const myObject = { id: id } // traditional way
 const myObject = { id } // magic
 
-//
-// Condition
+/**
+ *
+ *
+ * Condition
+ *
+ */
 if (true) {
 } else {
 }
@@ -106,7 +133,6 @@ const getName = () =>
 const myName = firstName != '' ? firstName : nickName
 
 // Short circuit
-// Why ?
 // Traditional function
 function getName() {
   if (firstName) {
@@ -123,7 +149,12 @@ const getName = () => firstName && nickName // return Nickname if firstName is t
 const myName = firstName && nickName
 const fullname = firstName || (nickName && lastName)
 
-// forEach, map, filter, reduce
+/**
+ *
+ *
+ * Foreach, Map, Filter, Reduce
+ *
+ */
 const myArray = [1, 2, 3, 4, 5]
 for (let i = 0; i < myArray.length; i++) {
   // do something
@@ -181,7 +212,12 @@ myArray
   .filter(ageYounger)
   .reduce(countAge)
 
-// Arrow function
+/***
+ *
+ *
+ * Bonus: Arrow function
+ *
+ */
 const myArrow = () => 2131
 const myArray = () => {
   // if () {
@@ -191,6 +227,7 @@ const myArray = () => {
   return 123
 }
 
+// Arrow function return object
 const myArrow = (user) => ({
   id: 0,
   firstName: user.firstName,
