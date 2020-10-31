@@ -1,7 +1,17 @@
-const myArray = [0, 1, 2, 3, 4, 5, 6, 7, 9, 10]
+let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+let newArray = []
 
-const totalNumber = myArray.reduce(function (total, currentNumber) {
-  return total + currentNumber
-}, 0)
+// for (var i = 0; i < myArray.length; i++) {
+//   if (myArray[i] % 2 == 0) {
+//     newArray.push(myArray[i])
+//   }
+// }
 
-console.log(totalNumber)
+newArray = myArray.filter((item) => {
+  return item % 2 == 0
+})
+
+console.log(newArray)
+// myArray.forEach((item) => {
+//   console.log(item)
+// })
